@@ -1,0 +1,25 @@
+class bio:
+    def __init__(self,name,age,address,goals):
+        self.name = name
+        self.age = age
+        self.address = address
+        self.goals = goals
+    def get_name(self):
+        return self.name
+    def get_age(self):
+        return self.age
+    def get_address(self):
+        return self.address
+    def get_goals(self):
+        return self.goals
+    def set_age(self,age):
+        self.age = age
+    def set_name(self,name):
+        self.name = name
+    def set_address(self,address):
+        self.address = address
+    def set_goals(self,goals):
+        self.goals = goals
+if __name__ == '__main__':
+    person = bio(input("Enter your name\n"),input("Date of Birth\n"),input("Address\n"),input("Goals\n"))
+    print(f"Name: {person.name}\nDate of Birth: {person.age}\nAddress: {person.address}\nGoals: {person.goals}")
